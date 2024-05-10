@@ -6,6 +6,9 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
+
+	"github.com/tdonia/gogogo/internal"
+	"github.com/tdonia/gogogo/pkg"
 )
 
 func main() {
@@ -16,4 +19,7 @@ func main() {
 	}
 
 	fmt.Println(os.Getenv("FOO"))
+
+	internal.Internal()
+	pkg.Shared()
 }
